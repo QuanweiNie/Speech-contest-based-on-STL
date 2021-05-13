@@ -11,40 +11,40 @@
 
 using namespace std;
 
-// Éè¼ÆÑİ½²¹ÜÀíÀà
+// è®¾è®¡æ¼”è®²ç®¡ç†ç±»
 class SpeechManager {
 public:
 	SpeechManager();
 	~SpeechManager();
 
-	void showMeau();         // ²Ëµ¥¹¦ÄÜ
-	void initSpeech();       // ³õÊ¼»¯±ÈÈü
-	void createSpeaker();    // ´´½¨Ñ¡ÊÖ
-	void startSpeech();      // ¿ªÊ¼±ÈÈü
-	void speechDraw();       // ³éÇ©
-	void speechContest();    // ½øĞĞ±ÈÈü
-	void showScore();        // ÏÔÊ¾·ÖÊı
+	void showMeau();         // èœå•åŠŸèƒ½
+	void initSpeech();       // åˆå§‹åŒ–æ¯”èµ›
+	void createSpeaker();    // åˆ›å»ºé€‰æ‰‹
+	void startSpeech();      // å¼€å§‹æ¯”èµ›
+	void speechDraw();       // æŠ½ç­¾
+	void speechContest();    // è¿›è¡Œæ¯”èµ›
+	void showScore();        // æ˜¾ç¤ºåˆ†æ•°
 
-	void saveRecord();       // ±£´æ±ÈÈüÊı¾İ
-	void loadRecord();       // ¼ÓÔØÍù½ìĞÅÏ¢
-	void showRecord();       // ÏÔÊ¾Íù½ìĞÅÏ¢
-	void clearRecord();      // Çå¿ÕÊı¾İ
-	void exitSystem();       // ÍË³öÏµÍ³
+	void saveRecord();       // ä¿å­˜æ¯”èµ›æ•°æ®
+	void loadRecord();       // åŠ è½½å¾€å±Šä¿¡æ¯
+	void showRecord();       // æ˜¾ç¤ºå¾€å±Šä¿¡æ¯
+	void clearRecord();      // æ¸…ç©ºæ•°æ®
+	void exitSystem();       // é€€å‡ºç³»ç»Ÿ
 
-	// ³ÉÔ±ÊôĞÔ
-	vector<int> v1;          // µÚÒ»ÂÖ±ÈÈü³ÉÔ±
-	vector<int> v2;          // µÚ¶şÂÖ±ÈÈü³ÉÔ±
-	vector<int> vwin;        // ×îÖÕ»ñ³ÉÔ±
+	// æˆå‘˜å±æ€§
+	vector<int> v1;          // ç¬¬ä¸€è½®æ¯”èµ›æˆå‘˜
+	vector<int> v2;          // ç¬¬äºŒè½®æ¯”èµ›æˆå‘˜
+	vector<int> vwin;        // æœ€ç»ˆè·æˆå‘˜
 
-	// ¹ØÁªÑ¡ÊÖºÍ±àºÅ
+	// å…³è”é€‰æ‰‹å’Œç¼–å·
 	map<int, Speaker> _speaker;
 
-	// Íù½ì¼ÇÂ¼
+	// å¾€å±Šè®°å½•
 	map<int, vector<string>> _record;
 
-    // ±ÈÈüÂÖÊı
+        // æ¯”èµ›è½®æ•°
 	int _index;
 
-	// Íù½ì±ÈÈüÎÄ¼ş±êÖ¾
+	// å¾€å±Šæ¯”èµ›æ–‡ä»¶æ ‡å¿—
 	bool fileIsEmpty;    
 };
